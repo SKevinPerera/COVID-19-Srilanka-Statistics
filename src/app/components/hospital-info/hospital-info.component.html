@@ -1,7 +1,60 @@
-<div class="container">
+<!-- <div class="container">
     <div class="mid-content">
         <p>Site Under Construction</p>
         <hr>
         <h1>COMING SOON</h1>
     </div>
+</div> -->
+
+<div class="content">
+    <div *ngFor="let product of hospitalInfo">
+        <div class="button-content">
+            <button mdbBtn color="info" class="waves-light" type="button" (click)="test.toggle()" mdbWavesEffect>
+                {{product.id}} . {{product.h_name_eng}}<br>
+                {{product.h_name_sin}}<br>
+                {{product.h_name_tam}}<br>
+            </button>
+        </div>
+        
+            
+    
+            <div class="" mdbCollapse #test="bs-collapse">
+            <mdb-card class="card">
+                <mdb-card-body>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Sri Lankans on treatment/observation :
+                    <span class="badge badge-warning badge-pill">{{product.treatment_local}}</span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Foreigners on treatment/observation :
+                    <span class="badge badge-secondary badge-pill">{{product.treatment_foreign}}</span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Treated/Observed Sri Lankans :
+                    <span class="badge badge-success badge-pill">{{product.treated_local}}</span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Treated/Observed Foreigners :
+                    <span class="badge badge-danger badge-pill">{{product.treated_foreign}}</span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Total on treatment/observation :
+                    <span class="badge badge-dark badge-pill">{{product.treatment_total}}</span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Total on treatment/observation :
+                    <span class="badge badge-info badge-pill">{{product.treated_total}}</span>
+                    </li>
+                </ul>
+                </mdb-card-body>
+            </mdb-card>
+            </div>
+        
 </div>
+

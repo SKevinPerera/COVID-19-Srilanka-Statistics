@@ -7,10 +7,6 @@ import { CallingApiService } from './../../services/calling-api.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-//Array of json attributes
-items = [];
-hospital = [];
-res = [];
 
 /**Need Variables */
 //Global INFO
@@ -60,44 +56,6 @@ update_date_time : string;
         this.global_total_cases = data.data.global_total_cases;
         this.global_deaths = data.data.global_deaths;
         this.global_recovered = data.data.global_recovered;
-
-
-
-
-        //Assigning items section 1
-        for (let key in data){
-          if (data.hasOwnProperty(key)){
-            this.items.push(data[key]);
-          }
-        }
-        console.log(this.items);
-
-        //Assigning main local and global result
-        for(let key in this.items[2]){
-            this.res.push(this.items[2][key]);
-        }
-        console.log(this.res);
-
-        //Assigning local hospital result
-        this.hospital = this.res[13];
-        console.log(this.hospital);
-
-        console.log(this.hospital[0].hospital.id);
-        console.log(this.hospital[0].hospital.name);
-        console.log(this.hospital[0].hospital.name_si);
-        console.log(this.hospital[0].hospital.name_ta);
-        console.log(this.hospital[0].treatment_local);
-        console.log(this.hospital[0].treatment_foreign);
-        console.log(this.hospital[0].treatment_local + this.hospital[0].treatment_foreign);
-
-
-
-        
-
-        console.log(data);
-
-
-
       }
     );
   }
