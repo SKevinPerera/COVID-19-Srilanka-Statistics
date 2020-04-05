@@ -1,0 +1,86 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-primary" [containerInside]="false">
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" routerLink="/">COVID-19</a></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="/" class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a routerLink="/hospitalinfo" class="nav-link waves-light" mdbWavesEffect>Hospital Info<span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="nav-item">
+        <a routerLink="/srilankamapdistribution" class="nav-link waves-light" mdbWavesEffect>SL Map Distribution</a>
+      </li>
+      
+      <!-- Dropdown -->
+      <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          Other<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+          <a routerLink="/othercountrydistribution" class="dropdown-item waves-light" mdbWavesEffect href="#">For More Global Info</a>
+          <div class="divider dropdown-divider"></div>
+          <a routerLink="/comparision" class="dropdown-item waves-light" mdbWavesEffect href="#">Country wise Comparision</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a routerLink="/aboutus" class="nav-link waves-light" mdbWavesEffect>About Us</a>
+      </li>
+
+    </ul>
+    <!-- Links -->
+
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a class="nav-link">
+          <mdb-icon fab icon="twitter"></mdb-icon>
+        </a>
+      </li>
+    </ul>
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <h5 class="mb-1">Latest Information are provided by Government</h5>
+      </li>
+      <li class="list-inline-item">
+          <a href="https://hpb.health.gov.lk/en/api-documentation" mdbBtn color="white" outline="true" class="waves-light" mdbWavesEffect>For More Info Click Me!</a>
+      </li>
+    </ul>
+    <!-- Call to action -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+     <p>Developed by Kevin Perera  <img src="./../assets/heart.png" style="max-width: 20px; max-height: 20px"></p>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->

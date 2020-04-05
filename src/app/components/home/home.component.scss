@@ -1,0 +1,112 @@
+.gov-header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.gov-contact img{
+    max-width: 100%;
+}
+
+/* .img {
+    max-width: 100%;
+} */
+
+.update-timer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.local-content-body {
+    font-size: 14px;
+}
+
+.global-content-body {
+    font-size: 14px;
+}
+
+.main-content {
+    margin-bottom: 10%;
+}
+
+.card {
+    margin-top: 4%;
+}
+
+
+
+
+
+
+
+
+
+
+.temp-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #f6f6f6; */
+}
+
+.box {
+    width: 350px;
+}
+
+.box h5 {
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box ul {
+    position: relative;
+    margin-left: -40px;
+}
+
+.box ul li {
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0,0,0,.1);
+    transition: transform 0.5s;
+}
+
+.box ul li:hover {
+    transform: scale(1.1);
+    z-index: 100;
+    background: #25bcff;
+    box-shadow: 0 5px 25px rgba(0,0,0,.1);
+    color: #fff;
+}
+
+
+.footer-copyright {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.mb-5{
+    color: #fff;
+}
+
+.col-md-12 {
+    background-color: rgb(104, 101, 101);
+}
+
+.inner {
+    width: 60vw;
+    margin-left: 20%;
+}
+
+.inner an{
+    height: 0px;
+    overflow: hidden;
+    border: 1px solid rgb(0,0,0,0.0555);
+}
